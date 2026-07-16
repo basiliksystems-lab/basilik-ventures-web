@@ -1,47 +1,51 @@
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
+    <section className="relative overflow-hidden bg-[oklch(0.22_0.05_250)]">
+      {/* Subtle texture */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,oklch(0.35_0.10_250_/_0.4),transparent)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:5rem_5rem]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-28 sm:pt-28 sm:pb-36 lg:px-10 lg:pt-36 lg:pb-44">
-        <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-primary/80 mb-8">
-          Ajman Free Zone &mdash; United Arab Emirates
-        </p>
+      <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:px-10 lg:pt-40 lg:pb-48">
+        <div className="flex items-center gap-3 mb-10">
+          <div className="h-px w-8 bg-white/30" />
+          <p className="text-[12px] font-semibold uppercase tracking-[0.25em] text-white/50">
+            Ajman Free Zone &mdash; UAE
+          </p>
+        </div>
 
         <h1
-          className="max-w-3xl text-[clamp(2.2rem,5vw,4rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-foreground"
+          className="max-w-3xl text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.05] font-semibold tracking-[-0.03em] text-white"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           International trade
           <br />
-          and business development
+          <span className="text-[oklch(0.72_0.12_250)]">and business development</span>
         </h1>
 
-        <p className="mt-8 max-w-xl text-[17px] leading-[1.7] text-muted-foreground">
+        <p className="mt-8 max-w-lg text-[17px] leading-[1.75] text-white/55">
           We facilitate wholesale commerce and build strategic partnerships
-          between Europe and the Middle East, providing our clients with
-          reliable access to established and emerging markets.
+          between Europe and the Middle East, providing reliable access to
+          established and emerging markets.
         </p>
 
-        <div className="mt-14 flex items-center gap-8">
+        <div className="mt-14 flex items-center gap-6">
           <a
             href="#services"
-            className="inline-flex h-11 items-center justify-center bg-foreground text-background px-7 text-[13px] font-medium tracking-wide hover:bg-foreground/85 transition-colors"
+            className="inline-flex h-12 items-center justify-center bg-white text-[oklch(0.22_0.05_250)] px-8 text-[13px] font-semibold tracking-[0.02em] hover:bg-white/90 transition-colors"
           >
             Our services
           </a>
           <a
             href="#about"
-            className="text-[13px] font-medium text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4 decoration-border hover:decoration-foreground/30"
+            className="inline-flex h-12 items-center justify-center border border-white/20 text-white/80 px-8 text-[13px] font-medium tracking-[0.02em] hover:bg-white/5 hover:border-white/30 transition-all"
           >
             Learn more
           </a>
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="h-px bg-border" />
-      </div>
+      {/* Bottom accent line */}
+      <div className="h-1 bg-gradient-to-r from-primary via-[oklch(0.55_0.15_250)] to-primary/30" />
     </section>
   );
 }

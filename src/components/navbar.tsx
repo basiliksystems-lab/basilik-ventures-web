@@ -22,37 +22,42 @@ export function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-[0_1px_0_rgba(0,0,0,0.06)]"
-          : "bg-transparent"
+          ? "bg-white shadow-[0_1px_3px_rgba(0,40,100,0.08)]"
+          : "bg-white/0"
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
-        <a href="#" className="flex items-center gap-3 group">
-          <span className="font-[var(--font-heading)] text-[22px] font-semibold tracking-[-0.02em] text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
-            Basilik
-          </span>
-          <span className="hidden sm:inline text-[11px] font-medium uppercase tracking-[0.15em] text-muted-foreground/70 border-l border-border pl-3">
-            Ventures
-          </span>
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-3">
+          <div className="h-9 w-9 bg-primary flex items-center justify-center">
+            <span className="text-white text-[15px] font-bold leading-none" style={{ fontFamily: "var(--font-heading)" }}>B</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[15px] font-semibold tracking-[-0.01em] text-foreground leading-tight">
+              Basilik Ventures
+            </span>
+            <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-primary/60 leading-tight">
+              F.Z.E.
+            </span>
+          </div>
         </a>
 
         {/* Desktop */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden md:flex items-center">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="px-4 py-2 text-[13px] font-medium text-muted-foreground/80 transition-colors hover:text-foreground"
+              className="relative px-5 py-2 text-[13px] font-medium text-foreground/60 transition-colors hover:text-primary"
             >
               {l.label}
             </a>
           ))}
-          <div className="ml-4 h-5 w-px bg-border" />
           <a
             href="mailto:info@basilikventures.com"
-            className="ml-4 text-[13px] font-medium text-foreground hover:text-primary transition-colors"
+            className="ml-6 inline-flex h-9 items-center px-5 bg-primary text-white text-[12px] font-semibold uppercase tracking-[0.05em] hover:bg-primary/90 transition-colors"
           >
-            info@basilikventures.com
+            Contact
           </a>
         </nav>
 
@@ -63,7 +68,7 @@ export function Navbar() {
           aria-label="Menu"
         >
           <span
-            className={`block h-[1.5px] w-5 bg-foreground transition-all duration-200 ${
+            className={`block h-[1.5px] w-5 bg-foreground transition-all duration-200 origin-center ${
               open ? "rotate-45 translate-y-[7px]" : ""
             }`}
           />
@@ -73,7 +78,7 @@ export function Navbar() {
             }`}
           />
           <span
-            className={`block h-[1.5px] w-5 bg-foreground transition-all duration-200 ${
+            className={`block h-[1.5px] w-5 bg-foreground transition-all duration-200 origin-center ${
               open ? "-rotate-45 -translate-y-[7px]" : ""
             }`}
           />
@@ -82,14 +87,14 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t bg-white/98 backdrop-blur-sm">
-          <nav className="flex flex-col px-6 py-6 gap-1">
+        <div className="md:hidden bg-white border-t border-primary/10">
+          <nav className="flex flex-col px-6 py-5 gap-1">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-[15px] font-medium text-foreground border-b border-border/50 last:border-0"
+                className="py-3 text-[15px] font-medium text-foreground border-b border-border/40 last:border-0"
               >
                 {l.label}
               </a>
@@ -97,9 +102,9 @@ export function Navbar() {
             <a
               href="mailto:info@basilikventures.com"
               onClick={() => setOpen(false)}
-              className="mt-4 text-[13px] text-muted-foreground"
+              className="mt-4 inline-flex h-10 items-center justify-center bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.05em]"
             >
-              info@basilikventures.com
+              Contact
             </a>
           </nav>
         </div>

@@ -39,35 +39,38 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 sm:py-32 bg-[oklch(0.975_0.003_250)]">
+    <section id="services" className="py-24 sm:py-32 bg-[oklch(0.96_0.008_250)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-primary/80 mb-4">
-          Services
-        </p>
+        <div className="flex items-center gap-3 mb-5">
+          <div className="h-px w-6 bg-primary" />
+          <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-primary">
+            Services
+          </p>
+        </div>
         <h2
           className="max-w-lg text-[clamp(1.6rem,3vw,2.4rem)] leading-[1.15] font-semibold tracking-[-0.02em]"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           What we do
         </h2>
-        <p className="mt-5 max-w-xl text-[16px] leading-[1.75] text-muted-foreground">
+        <p className="mt-5 max-w-xl text-[16px] leading-[1.8] text-muted-foreground">
           Comprehensive trading and business development services designed
           for seamless international commerce.
         </p>
 
-        <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <div
               key={s.number}
-              className="bg-[oklch(0.975_0.003_250)] p-8 lg:p-10 group"
+              className="bg-white border border-border/60 p-8 lg:p-9 group hover:border-primary/30 hover:shadow-[0_4px_20px_rgba(0,40,100,0.06)] transition-all duration-300"
             >
-              <span className="text-[12px] font-medium text-muted-foreground/50 tabular-nums">
+              <span className="inline-flex h-8 w-8 items-center justify-center bg-primary/8 text-[11px] font-bold text-primary tabular-nums">
                 {s.number}
               </span>
-              <h3 className="mt-4 text-[17px] font-semibold text-foreground group-hover:text-primary transition-colors">
+              <h3 className="mt-5 text-[16px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                 {s.title}
               </h3>
-              <p className="mt-3 text-[14px] leading-[1.7] text-muted-foreground">
+              <p className="mt-3 text-[14px] leading-[1.75] text-muted-foreground">
                 {s.description}
               </p>
             </div>
