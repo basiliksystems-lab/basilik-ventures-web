@@ -1,46 +1,70 @@
-import { Separator } from "@/components/ui/separator";
-
 export function Footer() {
   return (
-    <footer className="border-t bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
-              B
-            </div>
-            <span className="text-sm font-semibold tracking-tight">
-              BASILIK VENTURES F.Z.E.
+    <footer className="border-t border-border bg-[oklch(0.975_0.003_250)]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 sm:py-20">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <span
+              className="text-[20px] font-semibold tracking-[-0.02em] text-foreground"
+              style={{ fontFamily: "var(--font-heading)" }}
+            >
+              Basilik Ventures
             </span>
+            <p className="mt-4 text-[13px] leading-[1.7] text-muted-foreground">
+              International trade and business
+              <br />
+              development company.
+            </p>
           </div>
-          <nav className="flex gap-6">
-            <a
-              href="#about"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              About
-            </a>
-            <a
-              href="#services"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              Services
-            </a>
-            <a
-              href="#contact"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
+
+          {/* Registered Office */}
+          <div>
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.15em] text-foreground mb-4">
+              Registered Office
+            </h4>
+            <div className="space-y-1 text-[13px] leading-[1.7] text-muted-foreground">
+              <p>Basilik Ventures F.Z.E.</p>
+              <p>Ajman Free Zone</p>
+              <p>Ajman, United Arab Emirates</p>
+            </div>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.15em] text-foreground mb-4">
               Contact
-            </a>
-          </nav>
+            </h4>
+            <div className="space-y-2 text-[13px] text-muted-foreground">
+              <a
+                href="mailto:info@basilikventures.com"
+                className="block hover:text-foreground transition-colors"
+              >
+                info@basilikventures.com
+              </a>
+            </div>
+          </div>
+
+          {/* Hours */}
+          <div>
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.15em] text-foreground mb-4">
+              Business Hours
+            </h4>
+            <div className="space-y-1 text-[13px] leading-[1.7] text-muted-foreground">
+              <p>Sunday &ndash; Thursday</p>
+              <p>9:00 AM &ndash; 6:00 PM (GST)</p>
+            </div>
+          </div>
         </div>
-        <Separator className="my-8" />
-        <div className="flex flex-col items-center gap-2 text-center text-xs text-muted-foreground sm:flex-row sm:justify-between">
-          <p>
+
+        <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <p className="text-[12px] text-muted-foreground/70">
             &copy; {new Date().getFullYear()} Basilik Ventures F.Z.E. All rights
             reserved.
           </p>
-          <p>Ajman Free Zone, United Arab Emirates</p>
+          <p className="text-[12px] text-muted-foreground/50">
+            Ajman Free Zone, United Arab Emirates
+          </p>
         </div>
       </div>
     </footer>

@@ -1,44 +1,46 @@
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-white to-primary/10">
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:py-40">
-        <div className="max-w-2xl">
-          <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary">
-            Ajman Free Zone, UAE
-          </div>
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Connecting Markets.{" "}
-            <span className="text-primary">Building Partnerships.</span>
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            Basilik Ventures F.Z.E. is an international trading and business
-            development company facilitating wholesale commerce and strategic
-            partnerships across global markets.
-          </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#services"
-              className={cn(buttonVariants({ size: "lg" }), "h-11 px-6")}
-            >
-              Our Services
-            </a>
-            <a
-              href="#contact"
-              className={cn(
-                buttonVariants({ size: "lg", variant: "outline" }),
-                "h-11 px-6"
-              )}
-            >
-              Contact Us
-            </a>
-          </div>
+      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-28 sm:pt-28 sm:pb-36 lg:px-10 lg:pt-36 lg:pb-44">
+        <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-primary/80 mb-8">
+          Ajman Free Zone &mdash; United Arab Emirates
+        </p>
+
+        <h1
+          className="max-w-3xl text-[clamp(2.2rem,5vw,4rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-foreground"
+          style={{ fontFamily: "var(--font-heading)" }}
+        >
+          International trade
+          <br />
+          and business development
+        </h1>
+
+        <p className="mt-8 max-w-xl text-[17px] leading-[1.7] text-muted-foreground">
+          We facilitate wholesale commerce and build strategic partnerships
+          between Europe and the Middle East, providing our clients with
+          reliable access to established and emerging markets.
+        </p>
+
+        <div className="mt-14 flex items-center gap-8">
+          <a
+            href="#services"
+            className="inline-flex h-11 items-center justify-center bg-foreground text-background px-7 text-[13px] font-medium tracking-wide hover:bg-foreground/85 transition-colors"
+          >
+            Our services
+          </a>
+          <a
+            href="#about"
+            className="text-[13px] font-medium text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4 decoration-border hover:decoration-foreground/30"
+          >
+            Learn more
+          </a>
         </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <div className="h-px bg-border" />
       </div>
     </section>
   );

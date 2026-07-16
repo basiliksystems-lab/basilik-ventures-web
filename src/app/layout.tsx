@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-heading",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Basilik Ventures F.Z.E. | International Trade & Business Development",
   description:
-    "Basilik Ventures F.Z.E. is an international trading and business development company based in the Ajman Free Zone, UAE. Specializing in wholesale, commodity trading, and cross-border commerce.",
+    "Basilik Ventures F.Z.E. is an international trading and business development company based in the Ajman Free Zone, UAE. Specializing in wholesale, commodity trading, and cross-border commerce across Europe and the Middle East.",
   keywords: [
     "international trade",
     "wholesale",
@@ -19,6 +26,8 @@ export const metadata: Metadata = {
     "Ajman Free Zone",
     "commodity trading",
     "import export",
+    "Europe",
+    "Middle East",
   ],
   openGraph: {
     title: "Basilik Ventures F.Z.E.",
@@ -36,7 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${playfair.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
