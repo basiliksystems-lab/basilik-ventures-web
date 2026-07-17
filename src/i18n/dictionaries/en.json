@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "markets": "Markets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "location": "Ajman Free Zone, UAE",
+    "heading": "International trade and business development between Europe and the Middle East",
+    "subheading": "We facilitate wholesale commerce and build strategic partnerships, providing reliable access to established and emerging markets.",
+    "cta_services": "Our services",
+    "cta_about": "About us"
+  },
+  "about": {
+    "label": "About",
+    "heading_line1": "Built for",
+    "heading_line2": "cross-border",
+    "heading_line3": "commerce",
+    "paragraph1": "Basilik Ventures F.Z.E. is a trading and business development company incorporated in the Ajman Free Zone, United Arab Emirates. We work with manufacturers, distributors, and institutional buyers to facilitate cross-border commercial operations between European and Middle Eastern markets.",
+    "paragraph2": "The UAE's position as a global trade corridor allows us to offer our partners efficient and compliant access to both regions, covering sourcing, documentation, logistics, and regulatory compliance.",
+    "stats": {
+      "headquarters": "Headquarters",
+      "markets": "Markets",
+      "model": "Model",
+      "license": "License"
+    }
+  },
+  "services": {
+    "label": "Services",
+    "heading": "What we do",
+    "subheading": "Trading and business development services designed for seamless international commerce.",
+    "items": [
+      {
+        "title": "International Trade",
+        "description": "Full management of cross-border trade operations including sourcing, negotiation, and regulatory compliance across European and Middle Eastern jurisdictions."
+      },
+      {
+        "title": "Wholesale & Distribution",
+        "description": "Large-volume procurement and distribution across diverse product categories, leveraging our supplier network and strategic positioning in the UAE."
+      },
+      {
+        "title": "Business Development",
+        "description": "Market analysis, partnership facilitation, and expansion advisory for companies entering or growing within European and GCC markets."
+      },
+      {
+        "title": "Strategic Partnerships",
+        "description": "Building long-term commercial relationships between manufacturers, distributors, and institutional buyers across our operating regions."
+      }
+    ]
+  },
+  "markets": {
+    "label": "Markets",
+    "heading": "Where we operate",
+    "subheading": "Positioned in the UAE, at the intersection of European and Middle Eastern trade flows. We bridge both markets with reliable, compliant commerce.",
+    "trade_corridors": "EU / MENA Trade Corridors",
+    "regions": [
+      {
+        "name": "Middle East & GCC",
+        "markets": "UAE, Saudi Arabia, Oman, Bahrain, Kuwait, Qatar",
+        "description": "Headquartered in the Ajman Free Zone with direct operational access to all GCC member states. Our position allows for efficient trade facilitation, warehousing, and distribution across the Arabian Peninsula."
+      },
+      {
+        "name": "Europe",
+        "markets": "EU, UK, Turkey, Eastern Europe",
+        "description": "Established trade corridors with European manufacturers, suppliers, and distributors. We connect European products and services with Middle Eastern demand, managing compliance and logistics throughout the entire process."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "International trade and business\ndevelopment company.",
+    "registered_office": "Registered Office",
+    "contact": "Contact",
+    "business_hours": "Business Hours",
+    "hours_days": "Monday to Friday",
+    "hours_time": "9:00 AM to 6:00 PM",
+    "copyright": "Basilik Ventures F.Z.E. All rights reserved.",
+    "location": "Ajman Free Zone, United Arab Emirates",
+    "address": {
+      "line1": "Basilik Ventures F.Z.E.",
+      "line2": "Ajman Free Zone",
+      "line3": "Ajman, United Arab Emirates"
+    }
+  }
+}

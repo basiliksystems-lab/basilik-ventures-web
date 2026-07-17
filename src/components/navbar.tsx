@@ -2,16 +2,19 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-
-const links = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#markets", label: "Markets" },
-];
+import { useLocale } from "@/i18n/locale-context";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLocale();
+
+  const links = [
+    { href: "#about", label: t.nav.about },
+    { href: "#services", label: t.nav.services },
+    { href: "#markets", label: t.nav.markets },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -49,20 +52,21 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="relative px-4 py-2 text-[13px] font-medium text-foreground/55 transition-colors hover:text-primary after:absolute after:bottom-0 after:left-4 after:right-4 after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+              className="relative px-4 py-2 text-[13px] font-medium text-foreground/55 transition-colors hover:text-primary after:absolute after:bottom-0 after:start-4 after:end-4 after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-[inline-start]"
             >
               {l.label}
             </a>
           ))}
-          <div className="ml-3 h-4 w-px bg-border" />
+          <LanguageSwitcher />
+          <div className="ms-3 h-4 w-px bg-border" />
           <a
             href="mailto:corporate@basilikventures.com"
-            className="ml-3 inline-flex h-9 items-center gap-2 px-5 border border-primary text-primary text-[12px] font-semibold uppercase tracking-[0.05em] hover:bg-primary hover:text-white transition-all duration-200"
+            className="ms-3 inline-flex h-9 items-center gap-2 px-5 border border-primary text-primary text-[12px] font-semibold uppercase tracking-[0.05em] hover:bg-primary hover:text-white transition-all duration-200"
           >
             <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
-            Contact
+            {t.nav.contact}
           </a>
         </nav>
 
@@ -95,7 +99,7 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          open ? "max-h-80 border-t border-border/30" : "max-h-0"
+          open ? "max-h-96 border-t border-border/30" : "max-h-0"
         }`}
       >
         <nav className="flex flex-col px-6 py-5 bg-white">
@@ -109,12 +113,15 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
+          <div className="py-3 border-b border-border/30">
+            <LanguageSwitcher />
+          </div>
           <a
             href="mailto:corporate@basilikventures.com"
             onClick={() => setOpen(false)}
             className="mt-5 inline-flex h-10 items-center justify-center border border-primary text-primary text-[13px] font-semibold uppercase tracking-[0.05em]"
           >
-            Contact
+            {t.nav.contact}
           </a>
         </nav>
       </div>

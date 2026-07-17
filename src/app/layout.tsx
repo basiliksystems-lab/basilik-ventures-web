@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Space_Grotesk, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { LocaleProvider } from "@/i18n/locale-context";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -11,6 +12,12 @@ const dmSans = DM_Sans({
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-heading",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const ibmPlexArabic = IBM_Plex_Sans_Arabic({
+  variable: "--font-arabic",
+  subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
 });
 
@@ -47,9 +54,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${dmSans.variable} ${spaceGrotesk.variable} ${ibmPlexArabic.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LocaleProvider>{children}</LocaleProvider>
+      </body>
     </html>
   );
 }

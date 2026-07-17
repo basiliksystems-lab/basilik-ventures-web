@@ -93,4 +93,8 @@
   html {
     @apply font-sans scroll-smooth;
   }
+  html[dir="rtl"] {
+    --font-sans: var(--font-arabic);
+    --font-heading: var(--font-arabic);
+  }
 }
