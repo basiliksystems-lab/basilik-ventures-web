@@ -49,7 +49,7 @@ export function Services() {
         {/* Image + cards layout */}
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Image column */}
-          <div className="lg:col-span-2 relative h-[300px] sm:h-[400px] lg:h-auto overflow-hidden">
+          <div className="lg:col-span-2 relative h-[300px] sm:h-[400px] lg:h-auto overflow-hidden rounded-xl shadow-lg">
             <Image
               src="/warehouse.jpg"
               alt="Distribution warehouse"
@@ -64,7 +64,7 @@ export function Services() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-white border border-border/50 p-8 group hover:border-primary/20 transition-colors duration-300"
+                className="bg-white border border-border/50 rounded-lg p-8 shadow-sm group hover:border-primary/20 hover:shadow-md transition-all duration-300"
               >
                 <h3
                   className="text-[16px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300"

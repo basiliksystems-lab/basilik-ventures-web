@@ -46,13 +46,13 @@ export function Hero() {
             <div className="mt-10 flex items-center gap-5">
               <a
                 href="#services"
-                className="inline-flex h-11 items-center bg-white text-[oklch(0.20_0.05_250)] px-7 text-[13px] font-semibold tracking-[0.01em] hover:bg-white/90 transition-colors"
+                className="inline-flex h-11 items-center rounded-md bg-white text-[oklch(0.20_0.05_250)] px-7 text-[13px] font-semibold tracking-[0.01em] hover:bg-white/90 transition-colors"
               >
                 Our services
               </a>
               <a
                 href="#about"
-                className="inline-flex h-11 items-center border border-white/15 text-white/65 px-7 text-[13px] font-medium tracking-[0.01em] hover:border-white/30 hover:text-white/90 transition-all"
+                className="inline-flex h-11 items-center rounded-md border border-white/15 text-white/65 px-7 text-[13px] font-medium tracking-[0.01em] hover:border-white/30 hover:text-white/90 transition-all"
               >
                 About us
               </a>
@@ -60,7 +60,7 @@ export function Hero() {
           </div>
 
           {/* Right: building image */}
-          <div className="hidden lg:block relative h-[480px]">
+          <div className="hidden lg:block relative h-[480px] rounded-2xl overflow-hidden shadow-2xl shadow-black/30 ring-1 ring-white/10">
             <Image
               src="/hero-building.jpg"
               alt="Modern business workspace"
@@ -69,7 +69,7 @@ export function Hero() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[oklch(0.20_0.05_250)]/40" />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[oklch(0.20_0.05_250)]/40 rounded-2xl" />
           </div>
         </div>
       </div>

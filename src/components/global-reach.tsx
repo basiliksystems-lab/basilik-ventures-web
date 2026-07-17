@@ -38,7 +38,7 @@ export function GlobalReach() {
         </p>
 
         {/* Full-width logistics image */}
-        <div className="mt-14 relative h-[200px] sm:h-[280px] overflow-hidden">
+        <div className="mt-14 relative h-[200px] sm:h-[280px] overflow-hidden rounded-xl shadow-lg">
           <Image
             src="/logistics-truck.jpg"
             alt="Logistics and transport"
@@ -58,7 +58,7 @@ export function GlobalReach() {
           {regions.map((r) => (
             <div
               key={r.name}
-              className="relative overflow-hidden bg-[oklch(0.22_0.05_250)] p-10 lg:p-12 group"
+              className="relative overflow-hidden bg-[oklch(0.22_0.05_250)] rounded-lg p-10 lg:p-12 shadow-lg group"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[radial-gradient(circle,oklch(0.35_0.10_250_/_0.3),transparent_70%)]" />
 

@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         {/* Image strip */}
-        <div className="relative h-[280px] sm:h-[360px] lg:h-[420px] mb-20 overflow-hidden">
+        <div className="relative h-[280px] sm:h-[360px] lg:h-[420px] mb-20 overflow-hidden rounded-xl shadow-lg">
           <Image
             src="/partnerships.jpg"
             alt="Business partnerships"
