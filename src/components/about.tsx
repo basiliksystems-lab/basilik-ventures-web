@@ -1,7 +1,20 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section id="about" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        {/* Image strip */}
+        <div className="relative h-[280px] sm:h-[360px] lg:h-[420px] mb-20 overflow-hidden">
+          <Image
+            src="/partnerships.jpg"
+            alt="Business partnerships"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40" />
+        </div>
+
         <div className="grid gap-16 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">

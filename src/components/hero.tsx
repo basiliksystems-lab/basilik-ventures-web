@@ -3,9 +3,16 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[oklch(0.22_0.05_250)]">
-      {/* Subtle texture */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,oklch(0.35_0.10_250_/_0.4),transparent)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:5rem_5rem]" />
+      {/* Background image */}
+      <Image
+        src="/hero-port.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-20"
+        priority
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.05_250)]/95 via-[oklch(0.22_0.05_250)]/85 to-[oklch(0.22_0.05_250)]/70" />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:px-10 lg:pt-40 lg:pb-48">
         <div className="mb-14">
