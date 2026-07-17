@@ -8,6 +8,7 @@ export function Hero() {
         src="/hero-port.jpg"
         alt=""
         fill
+        sizes="100vw"
         className="object-cover opacity-30"
         priority
       />
@@ -62,8 +63,9 @@ export function Hero() {
           <div className="hidden lg:block relative h-[480px]">
             <Image
               src="/hero-building.jpg"
-              alt="Modern business buildings"
+              alt="Modern business workspace"
               fill
+              sizes="50vw"
               className="object-cover"
               priority
             />

@@ -10,6 +10,7 @@ export function About() {
             src="/partnerships.jpg"
             alt="Business partnerships"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40" />

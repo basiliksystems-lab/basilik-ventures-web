@@ -43,6 +43,7 @@ export function GlobalReach() {
             src="/logistics-truck.jpg"
             alt="Logistics and transport"
             fill
+            sizes="100vw"
             className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.22_0.05_250)]/70 to-transparent" />
