@@ -56,7 +56,7 @@ export function Navbar() {
           ))}
           <div className="ml-3 h-4 w-px bg-border" />
           <a
-            href="mailto:info@basilikventures.com"
+            href="mailto:corporate@basilikventures.com"
             className="ml-3 inline-flex h-9 items-center gap-2 px-5 border border-primary text-primary text-[12px] font-semibold uppercase tracking-[0.05em] hover:bg-primary hover:text-white transition-all duration-200"
           >
             <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
@@ -110,7 +110,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:info@basilikventures.com"
+            href="mailto:corporate@basilikventures.com"
             onClick={() => setOpen(false)}
             className="mt-5 inline-flex h-10 items-center justify-center border border-primary text-primary text-[13px] font-semibold uppercase tracking-[0.05em]"
           >

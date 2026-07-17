@@ -39,10 +39,10 @@ export function Footer() {
               Contact
             </h4>
             <a
-              href="mailto:info@basilikventures.com"
+              href="mailto:corporate@basilikventures.com"
               className="text-[13px] text-white/40 hover:text-white transition-colors"
             >
-              info@basilikventures.com
+              corporate@basilikventures.com
             </a>
           </div>
 
