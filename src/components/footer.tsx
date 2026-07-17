@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Footer() {
   return (
     <footer className="bg-[oklch(0.18_0.04_250)] text-white">
@@ -5,17 +7,13 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="h-8 w-8 bg-white/10 flex items-center justify-center">
-                <span className="text-[13px] font-bold text-white" style={{ fontFamily: "var(--font-heading)" }}>B</span>
-              </div>
-              <span
-                className="text-[17px] font-semibold tracking-[-0.01em]"
-                style={{ fontFamily: "var(--font-heading)" }}
-              >
-                Basilik Ventures
-              </span>
-            </div>
+            <Image
+              src="/logo-white.png"
+              alt="Basilik Ventures"
+              width={180}
+              height={40}
+              className="h-6 w-auto opacity-70 mb-5"
+            />
             <p className="text-[13px] leading-[1.7] text-white/40">
               International trade and business
               <br />

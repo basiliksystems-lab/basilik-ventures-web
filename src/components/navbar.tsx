@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "#about", label: "About" },
@@ -28,18 +29,15 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
-          <div className="h-9 w-9 bg-primary flex items-center justify-center">
-            <span className="text-white text-[15px] font-bold leading-none" style={{ fontFamily: "var(--font-heading)" }}>B</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-[15px] font-semibold tracking-[-0.01em] text-foreground leading-tight">
-              Basilik Ventures
-            </span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-primary/60 leading-tight">
-              F.Z.E.
-            </span>
-          </div>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo-white.png"
+            alt="Basilik Ventures"
+            width={180}
+            height={40}
+            className="h-7 w-auto brightness-0"
+            priority
+          />
         </a>
 
         {/* Desktop */}

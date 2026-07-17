@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[oklch(0.22_0.05_250)]">
@@ -6,6 +8,17 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:5rem_5rem]" />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:px-10 lg:pt-40 lg:pb-48">
+        <div className="mb-14">
+          <Image
+            src="/logo-white.png"
+            alt="Basilik Ventures"
+            width={280}
+            height={60}
+            className="h-10 sm:h-12 w-auto opacity-90"
+            priority
+          />
+        </div>
+
         <div className="flex items-center gap-3 mb-10">
           <div className="h-px w-8 bg-white/30" />
           <p className="text-[12px] font-semibold uppercase tracking-[0.25em] text-white/50">
