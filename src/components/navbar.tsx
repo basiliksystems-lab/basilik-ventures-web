@@ -31,11 +31,11 @@ export function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center">
           <Image
-            src="/logo-white.png"
+            src="/logo.png"
             alt="Basilik Ventures"
             width={180}
             height={40}
-            className="h-7 w-auto brightness-0"
+            className="h-5 w-auto"
             priority
           />
         </a>

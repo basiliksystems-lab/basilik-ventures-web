@@ -59,11 +59,11 @@ export function Hero() {
           {/* Right: logo */}
           <div className="hidden lg:flex items-center justify-end">
             <Image
-              src="/logo-white.png"
+              src="/logo.png"
               alt="Basilik Ventures"
               width={500}
               height={120}
-              className="w-full max-w-md opacity-80"
+              className="w-full max-w-lg invert opacity-70"
               priority
             />
           </div>

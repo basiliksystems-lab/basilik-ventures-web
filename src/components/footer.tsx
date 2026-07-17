@@ -8,11 +8,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/logo-white.png"
+              src="/logo.png"
               alt="Basilik Ventures"
               width={180}
               height={40}
-              className="h-6 w-auto opacity-70 mb-5"
+              className="h-4 w-auto invert opacity-60 mb-5"
             />
             <p className="text-[13px] leading-[1.7] text-white/40">
               International trade and business
