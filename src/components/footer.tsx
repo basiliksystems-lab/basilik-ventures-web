@@ -52,8 +52,8 @@ export function Footer() {
               Business Hours
             </h4>
             <div className="space-y-1 text-[13px] leading-[1.7] text-white/40">
-              <p>Sunday to Thursday</p>
-              <p>9:00 AM to 6:00 PM (GST)</p>
+              <p>Monday to Friday</p>
+              <p>9:00 AM to 6:00 PM</p>
             </div>
           </div>
         </div>
