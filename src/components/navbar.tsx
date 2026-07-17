@@ -29,13 +29,22 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-3">
+          <div className="h-8 w-8 bg-primary flex items-center justify-center">
+            <Image
+              src="/logo-white.png"
+              alt=""
+              width={60}
+              height={20}
+              className="h-3 w-auto"
+            />
+          </div>
           <Image
-            src="/logo.png"
+            src="/logo-white.png"
             alt="Basilik Ventures"
             width={180}
             height={40}
-            className="h-5 w-auto"
+            className="h-[14px] w-auto brightness-0 opacity-85"
             priority
           />
         </a>

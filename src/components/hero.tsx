@@ -12,12 +12,12 @@ export function Hero() {
         priority
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.05_250)]/95 via-[oklch(0.22_0.05_250)]/85 to-[oklch(0.22_0.05_250)]/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.05_250)]/95 via-[oklch(0.22_0.05_250)]/85 to-[oklch(0.22_0.05_250)]/60" />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:px-10 lg:pt-40 lg:pb-48">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left: text content */}
-          <div>
+        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+          {/* Left: text content (3 cols) */}
+          <div className="lg:col-span-3">
             <div className="flex items-center gap-3 mb-10">
               <div className="h-px w-8 bg-white/30" />
               <p className="text-[12px] font-semibold uppercase tracking-[0.25em] text-white/50">
@@ -56,14 +56,14 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right: logo */}
-          <div className="hidden lg:flex items-center justify-end">
+          {/* Right: logo (2 cols) */}
+          <div className="hidden lg:flex lg:col-span-2 items-center justify-center">
             <Image
-              src="/logo.png"
+              src="/logo-white.png"
               alt="Basilik Ventures"
-              width={500}
-              height={120}
-              className="w-full max-w-lg invert opacity-70"
+              width={600}
+              height={150}
+              className="w-full max-w-sm opacity-[0.15]"
               priority
             />
           </div>
