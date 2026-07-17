@@ -15,8 +15,17 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10 py-28 sm:py-36 lg:py-40">
         <div className="max-w-2xl">
+          <Image
+            src="/logo-white.png"
+            alt="Basilik Ventures"
+            width={280}
+            height={60}
+            className="h-8 sm:h-10 w-auto mb-10 opacity-90"
+            priority
+          />
+
           <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-[oklch(0.65_0.12_250)] mb-6">
-            Basilik Ventures F.Z.E. / Ajman Free Zone, UAE
+            Ajman Free Zone, UAE
           </p>
 
           <h1
