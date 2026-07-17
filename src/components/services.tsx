@@ -5,7 +5,7 @@ const services = [
     number: "01",
     title: "International Trade",
     description:
-      "End-to-end management of cross-border trade operations including sourcing, negotiation, and regulatory compliance across European and Middle Eastern jurisdictions.",
+      "Full management of cross-border trade operations including sourcing, negotiation, and regulatory compliance across European and Middle Eastern jurisdictions.",
   },
   {
     number: "02",
@@ -29,7 +29,7 @@ const services = [
     number: "05",
     title: "Logistics Coordination",
     description:
-      "Supply chain management with freight forwarding, customs brokerage, and delivery solutions tailored for EU-MENA trade corridors.",
+      "Supply chain management with freight forwarding, customs brokerage, and delivery solutions across EU and MENA trade corridors.",
   },
   {
     number: "06",

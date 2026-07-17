@@ -46,8 +46,8 @@ export function About() {
             <p className="text-[16px] leading-[1.8] text-muted-foreground">
               The UAE&apos;s position as a global trade corridor allows us to
               offer our partners efficient and compliant access to both regions,
-              managing everything from sourcing and documentation to logistics
-              and regulatory compliance.
+              covering sourcing, documentation, logistics, and regulatory
+              compliance.
             </p>
 
             <div className="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">

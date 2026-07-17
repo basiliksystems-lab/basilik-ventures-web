@@ -11,7 +11,7 @@ const regions = [
     name: "Europe",
     markets: "EU, UK, Turkey, Eastern Europe",
     description:
-      "Established trade corridors with European manufacturers, suppliers, and distributors. We connect European products and services with Middle Eastern demand, managing compliance and logistics end-to-end.",
+      "Established trade corridors with European manufacturers, suppliers, and distributors. We connect European products and services with Middle Eastern demand, managing compliance and logistics throughout the entire process.",
   },
 ];
 
@@ -32,8 +32,8 @@ export function GlobalReach() {
           Where we operate
         </h2>
         <p className="mt-5 max-w-xl text-[16px] leading-[1.8] text-muted-foreground">
-          Positioned in the UAE — at the intersection of European and Middle
-          Eastern trade flows — we bridge both markets with reliable,
+          Positioned in the UAE, at the intersection of European and Middle
+          Eastern trade flows. We bridge both markets with reliable,
           compliant commerce.
         </p>
 
@@ -48,7 +48,7 @@ export function GlobalReach() {
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.22_0.05_250)]/70 to-transparent" />
           <div className="absolute bottom-0 left-0 p-8">
             <p className="text-[11px] uppercase tracking-[0.15em] font-medium text-white/70">
-              EU &mdash; MENA Trade Corridors
+              EU / MENA Trade Corridors
             </p>
           </div>
         </div>
